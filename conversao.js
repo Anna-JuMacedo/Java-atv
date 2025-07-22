@@ -5,5 +5,5 @@ document.getElementById('formConversao').addEventListener('submit', function(eve
     const valor = parseFloat(document.getElementById('valor').value);
     const resultado = cotacao * valor;
 
-    alert(`A cotação do Dólar é: ${cotacao * valor}`);
+    document.getElementById('resultado').innerText = `O valor em reais é: R$ ${resultado.toFixed(2)}`;
 });
